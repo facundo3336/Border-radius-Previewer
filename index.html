@@ -8,6 +8,25 @@
     <title>Border radius Previewer</title>
   </head>
   <body>
+    <h1>Border Radius Previewer</h1>
+    <div class="pageContainer">
+      <div class="leftInputsContainer">
+        <input id="topLeftInput" type="number" />
+        <input id="bottomLeftInput" type="number" />
+      </div>
+      <div id="viewer" class="viewer">
+        <div class="viewerContent">
+          <span id="topLeftValue"></span>
+          <span id="topRightValue"></span>
+          <span id="bottomLeftValue"></span>
+          <span id="bottomRightValue"></span>
+        </div>
+      </div>
+      <div class="rightInputsContainer">
+        <input id="rightTopInput" type="number" />
+        <input id="rightBottomInput" type="number" />
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
