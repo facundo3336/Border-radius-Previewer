@@ -28,19 +28,35 @@ function setBottomRightBorder(borderValue) {
 topLeftInput.addEventListener("input", (event) => {
   setTopLeftBorder(event.target.value);
   topLeftTextContainer.innerHTML = `border-top-left-radius: ${event.target.value};`;
+
+  if (event.target.value === "0" || event.target.value.length === 0) {
+    topLeftTextContainer.innerHTML = "";
+  }
 });
 
 bottomLeftInput.addEventListener("input", (event) => {
   setBottomLeftBorder(event.target.value);
   bottomLeftTextContainer.innerHTML = `border-bottom-left-radius: ${event.target.value};`;
+
+  if (event.target.value === "0" || event.target.value.length === 0) {
+    bottomLeftTextContainer.innerHTML = "";
+  }
 });
 
 rightTopInput.addEventListener("input", (event) => {
   setTopRightBorder(event.target.value);
   topRightTextContainer.innerHTML = `border-top-right-radius: ${event.target.value};`;
+
+  if (event.target.value === "0" || event.target.value.length === 0) {
+    topRightTextContainer.innerHTML = "";
+  }
 });
 
 rightBottomInput.addEventListener("input", (event) => {
   setBottomRightBorder(event.target.value);
   bottomRightTextContainer.innerHTML = `border-bottom-right-radius: ${event.target.value};`;
+
+  if (event.target.value === "0" || event.target.value.length === 0) {
+    bottomRightTextContainer.innerHTML = "";
+  }
 });
